@@ -83,7 +83,7 @@ export class PrincipalPage implements OnInit {
         }
       
 
-      this.lastXAcceleration = smoothedAcceleration;
+      //this.lastXAcceleration = smoothedAcceleration;
     }
   }
 
