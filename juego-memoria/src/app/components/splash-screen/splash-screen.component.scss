@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #70b6f3;
+    font-family: 'Josefin Sans', cursive;
+    font-weight: bold;
+}
+
+.lblsNombre{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    bottom: 40%;
+    left: 2%;
+    color: #f5bb5e;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 3);
+}
+
+.lblsApellido{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: #f5bb5e;
+    right: 2%;
+    bottom: 40%;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 3);
+}
+
+.lblsNombre label{
+    margin: 5px;
+}
+
+.lblsApellido label{
+    margin: 5px;
+}
+
+.lblsNombre:active{
+    color: #f97881;
+}
+
+.lblsApellido:active{
+    color: #f97881;
+}
+
+#division{
+    position: absolute;
+    font-size: 30px;
+    color: #f5bb5e;
+    bottom: 1%;
+    left: 44%;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 3);
+}
+
+#division:active{
+    color: #f97881;
+}
+
+#icon{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 30%;
+    top: 39.5%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 3);
+    border-radius: 10px;
+}
+
+
+.tracking-in-contract-bck-bottom {
+	-webkit-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck-bottom {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px) translateY(300px);
+              transform: translateZ(400px) translateY(300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck-bottom {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px) translateY(300px);
+              transform: translateZ(400px) translateY(300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+.roll-in-top {
+	-webkit-animation: roll-in-top 0.6s ease-out both;
+	        animation: roll-in-top 0.6s ease-out both;
+}
+
+@-webkit-keyframes roll-in-top {
+    0% {
+      -webkit-transform: translateY(-800px) rotate(-540deg);
+              transform: translateY(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-top {
+    0% {
+      -webkit-transform: translateY(-800px) rotate(-540deg);
+              transform: translateY(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  

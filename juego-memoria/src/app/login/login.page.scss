@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    --background: #70b6f3;
+    font-family: 'Josefin Sans', cursive;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-singin{
+    position: relative;
+    width: 75vw;
+    height: 60vh;
+    background: #5c7bdd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 25%;
+    left: 12%;
+}
+
+.divImage{
+    width: 25%;
+    height: auto;
+    
+}
+
+#title{
+    text-align: center;
+    font-family: 'Josefin Sans', cursive;
+    font-weight: bold;
+    color: black;
+    --background: #f5bb5e;
+}

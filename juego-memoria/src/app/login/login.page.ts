@@ -12,7 +12,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit() 
   {
-    this.router.navigate(['/inicio']);
+    //this.router.navigate(['/inicio']);
   }
 
 }
