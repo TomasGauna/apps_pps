@@ -1,0 +1,32 @@
+<ion-button class="fullscreen-button" [disabled]="botonDeshabilitado" (click)="activarAlarma()" color="danger">
+  <div>
+    <img src="assets/icon/alarma_vacia.png" *ngIf="!alarmaActiva">
+    <img src="assets/icon/icon.png" *ngIf="alarmaActiva">
+  </div>
+  <div>
+    {{ alarmaActiva ? 'Desactivar Alarma' : 'Activar Alarma' }}
+  </div>
+</ion-button>
+
+<div class="spinner-overlay modal" *ngIf="showModal">
+  <div class="container-modal">
+    <label id="lblIngreso">Ingreso de contraseña</label>
+    <input id="inputPass" [(ngModel)]="password" type="password" placeholder="Ingrese su contraseña">
+    <div class="btns">
+      <ion-button id="btnAcep" (click)="submitModal()">Aceptar</ion-button>
+      <ion-button id="btnCanc" (click)="closeModal()">Cancelar</ion-button>
+    </div>
+  </div>
+</div>
+
+  <div class="error-popup">
+    <div class="error-popup-content">
+      <span class="error-icon">!</span>
+      <p class="error-message">Contraseña incorrecta.</p>
+    </div>
+  </div>
+    
+<audio id="vertical"></audio>
+<audio id="lado"></audio>
+<audio id="horizontal"></audio>
+<audio id="error"></audio>

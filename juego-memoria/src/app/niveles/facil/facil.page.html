@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+  <div class="juego">
+
+    <ion-fab (click)="volver()" vertical="top" horizontal="start">
+      <ion-fab-button>
+        <ion-icon name="close"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="4" size-lg="2" >
+          <img id="1" src={{carta}} (click)="darVuelta(1)"/>
+        </ion-col>
+
+        <ion-col size="6" size-md="4" size-lg="2" (click)="darVuelta(2)">
+          <img id="2" src={{carta}} />
+        </ion-col>
+
+        <ion-col size="6" size-md="4" size-lg="2" (click)="darVuelta(3)">
+          <img id="3" src={{carta}} />
+        </ion-col>
+
+        <ion-col size="6" size-md="4" size-lg="2" (click)="darVuelta(4)">
+          <img id="4" src={{carta}} />
+        </ion-col>
+
+        <ion-col size="6" size-md="4" size-lg="2" (click)="darVuelta(5)">
+          <img id="5" src={{carta}} />
+        </ion-col>
+        <ion-col size="6" size-md="4" size-lg="2" (click)="darVuelta(6)">
+          <img id="6" src={{carta}} />
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   </div>
+   <div class="modal" *ngIf="mostrarModal">
+      <div class="modal-contenido">
+          <h2>¡GANASTE!</h2>
+          <h2>Los 5 mejores puntajes</h2>
+          <div class="user-box">
+            <label>{{jugadores[0].jugador.split('@')[0]}} {{jugadores[0].segundos}}</label>
+            <label>{{jugadores[1].jugador.split('@')[0]}} {{jugadores[1].segundos}}</label>
+            <label>{{jugadores[2].jugador.split('@')[0]}} {{jugadores[2].segundos}}</label>
+            <label>{{jugadores[3].jugador.split('@')[0]}} {{jugadores[3].segundos}}</label>
+            <label>{{jugadores[4].jugador.split('@')[0]}} {{jugadores[4].segundos}}</label>
+          </div>
+          <div class="botonModal" >
+              <button (click)="volver()">Aceptar</button>
+          </div>
+      </div>
+    </div>
+</ion-content>

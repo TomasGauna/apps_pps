@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-content{
+	--background: linear-gradient(45deg, #ffe711, #ffea00);
+}
+
+.facil{
+    --background: #70b6f3;
+    width: 96%;
+    height: 48%;
+    border: none;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 3);
+    font-family: monospace;
+}
+
+.medio{
+    --background: #f97980;
+    width: 96%;
+    height: 48%;
+    border: none;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 3);
+    font-family: monospace;
+}
+
+.dificil{
+    --background: #5c7bdd;
+    width: 96%;
+    height: 48%;
+    border: none;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 3);
+    font-family: monospace;
+}
+
+ion-content.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --background: #295564;
+}
+
+ion-toolbar{
+  --background: #295564;
+}
+
+
+
+
+
+
+
+
+ion-fab-button{
+	display: flex;
+	position: absolute;
+	--background: #ff0000;
+	z-index: 1000;
+}
+
+ion-fab{
+	top: 1.5%;
+	right: 5%;
+}

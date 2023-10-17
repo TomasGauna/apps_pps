@@ -1,0 +1,85 @@
+<ion-content [fullscreen]="true">
+  <div class="juego">
+    <ion-fab (click)="volver()" vertical="top" horizontal="start">
+      <ion-fab-button>
+        <ion-icon name="close"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(1)">
+          <img id="1" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(2)">
+          <img id="2" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(3)">
+          <img id="3" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(4)">
+          <img id="4" src={{carta}} />        
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(5)">
+          <img id="5" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(6)">
+          <img id="6" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(7)">
+          <img id="7" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(8)">
+          <img id="8" src={{carta}} />        
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(9)">
+          <img id="9" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(10)">
+          <img id="10" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(11)">
+          <img id="11" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(12)">
+          <img id="12" src={{carta}} />        
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(13)">
+          <img id="13" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(14)">
+          <img id="14" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(15)">
+          <img id="15" src={{carta}} />        
+        </ion-col>
+        <ion-col size="3" size-md="3" size-lg="3" (click)="darVuelta(16)">
+          <img id="16" src={{carta}} />        
+        </ion-col>
+      </ion-row>
+    </ion-grid> 
+  </div>
+
+  <div class="modal" *ngIf="mostrarModal">
+    <div class="modal-contenido">
+        <h2>¡GANASTE!</h2>
+        <h2>Los 5 mejores puntajes</h2>
+        <div class="user-box">
+          <label>{{jugadores[0].jugador.split('@')[0]}} {{jugadores[0].segundos}}</label>
+          <label>{{jugadores[1].jugador.split('@')[0]}} {{jugadores[1].segundos}}</label>
+          <label>{{jugadores[2].jugador.split('@')[0]}} {{jugadores[2].segundos}}</label>
+          <label>{{jugadores[3].jugador.split('@')[0]}} {{jugadores[3].segundos}}</label>
+          <label>{{jugadores[4].jugador.split('@')[0]}} {{jugadores[4].segundos}}</label>
+        </div>
+        <div class="botonModal" >
+            <button (click)="volver()">Aceptar</button>
+        </div>
+    </div>
+  </div>
+</ion-content>
